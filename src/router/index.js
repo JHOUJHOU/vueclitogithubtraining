@@ -1,19 +1,41 @@
 import { createRouter, createWebHashHistory } from 'vue-router';
-import HomeView from '../views/HomeView.vue';
 
 const routes = [
   {
     path: '/',
     name: 'home',
-    component: HomeView,
+    component: () => import('../views/FrontView.vue'),
+    children: [
+      {
+        path: 'products', // 產品列表
+        component: () => import('../views/ProductsView.vue'),
+      },
+      {
+        path: 'product/:id', // 單一產品頁面 :動態參數
+        component: () => import('../views/ProductView.vue'),
+      },
+      {
+        path: 'login', // 登入
+        component: () => import('../views/LoginView.vue'),
+        children: [
+          {
+            path: 'cart', // 購物車
+            component: () => import('../views/CartView.vue'),
+          },
+        ],
+      },
+    ],
   },
   {
-    path: '/about',
-    name: 'about',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue'),
+    path: '/admin', // 後台
+    component: () => import('../views/DashboardView.vue'),
+    // 巢狀結構
+    children: [
+      {
+        path: 'products', // 後台產品列表
+        component: () => import('../views/AdminProducts.vue'),
+      },
+    ],
   },
 ];
 
