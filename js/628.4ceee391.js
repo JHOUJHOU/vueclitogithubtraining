@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunktestvuecli"]=self["webpackChunktestvuecli"]||[]).push([[628],{628:function(e,n,t){t.r(n),t.d(n,{default:function(){return l}});var u=t(252);function r(e,n){return(0,u.wg)(),(0,u.iD)("h1",null,"購物車")}var c=t(744);const s={},i=(0,c.Z)(s,[["render",r]]);var l=i}}]);
+//# sourceMappingURL=628.4ceee391.js.map

@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunktestvuecli"]=self["webpackChunktestvuecli"]||[]).push([[590],{590:function(e,n,t){t.r(n),t.d(n,{default:function(){return l}});var u=t(252);function r(e,n){return(0,u.wg)(),(0,u.iD)("h2",null,"後台的產品列表")}var c=t(744);const s={},i=(0,c.Z)(s,[["render",r]]);var l=i}}]);
+//# sourceMappingURL=590.4eafa1bf.js.map

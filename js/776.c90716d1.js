@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunktestvuecli"]=self["webpackChunktestvuecli"]||[]).push([[776],{776:function(t,n,u){u.r(n),u.d(n,{default:function(){return c}});var e=u(252);const o=(0,e._)("h2",null,"登入頁面",-1);function r(t,n,u,r,l,s){return(0,e.wg)(),(0,e.iD)(e.HY,null,[o,(0,e._)("button",{type:"button",onClick:n[0]||(n[0]=(...t)=>s.login&&s.login(...t))},"登入")],64)}var l={methods:{login(){console.log(this.$router),this.$router.push("/admin/products")}}},s=u(744);const i=(0,s.Z)(l,[["render",r]]);var c=i}}]);
+//# sourceMappingURL=776.c90716d1.js.map
